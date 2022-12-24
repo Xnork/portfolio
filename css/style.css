@@ -1,0 +1,207 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-style: normal;
+  font-variant-ligatures: normal;
+  font-variant-caps: normal;
+  font-variant-numeric: normal;
+  font-variant-east-asian: normal;
+  font-weight: normal;
+  font-stretch: normal;
+  font-family: Montserrat, Montserrat, sans-serif;
+}
+
+html {
+  background-color: #000;
+}
+
+.action-bar {
+  background-color: #0E1116;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 18px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  align-items: center;
+}
+
+.action-bar .bi-list {
+  font-size: 18pt;
+}
+
+/* ------------- Header */
+.presentation {
+  padding: 18px;
+  width: 100%;
+}
+
+.presentation article h1 .bi {
+  padding-right: 12px;
+}
+.presentation article h1 {
+  font-weight: 450;
+  font-size: 18pt;
+  color: #98D2EB;
+  font-weight: 380;
+  padding-bottom: 14px;
+}
+
+.presentation article {
+  background-color: #0E1116;
+  border-radius: 10px;
+  padding: 24px;
+  margin-top: 14px;
+}
+.presentation article p {
+  color: rgb(170, 170, 170);
+  font-weight: 380;
+
+}
+
+.draft-2 {
+  color: #E23428;
+
+}
+
+.draft {
+  color: #30BCED;
+}
+
+/* ------------- Card Project */
+.card-project {
+  margin: 25px;
+  background-color: #181D25;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+
+.card-project .card-content .card-title {
+  font-size: 14pt;
+  font-weight: 380;
+  text-align: center;
+}
+
+.card-project .card-content .card-text {
+  font-size: 10pt;
+  color: rgb(170, 170, 170);
+  font-weight: 380;
+  padding-top: 8px;
+}
+
+.card-project .card-content {
+  padding: 10px;
+  color: white;
+  height: 130px;
+}
+
+.card-project .card-action .card-link {
+  background-color: #E1F2FE;
+  color: black;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 16px;
+  display: block;
+  margin-top: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.card-project .card-image {
+  width: 100%;
+  height: 200px;
+  background-position: center;
+  background-size: cover;
+}
+
+.banner h1 {
+  background-color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  color: white;
+  width: 100%;
+  padding: 25px 0 25px 0;
+}
+
+.title-sep:nth-child(1) {
+  margin-top: 45px;
+}
+
+.title-sep {
+  color: white;
+  text-align: center;
+  padding: 15px;
+  border-bottom: 1px solid white;
+  margin: 15px;
+  font-size: 28pt;
+  font-weight: 380;
+}
+
+.banner {
+  display: flex;
+  align-items: flex-end;
+  background-image: url(https://github.com/Xnork/xnork-blog-site/blob/main/public/assets/slides/slide-1.png?raw=true);
+  height: 50vh;
+  background-position: center;
+  background-size: cover;
+}
+
+.main-footer {
+  background-color: rgb(12, 12, 12);
+  color: white;
+  text-align: center;
+  padding: 24px 12px 24px 12px;
+}
+
+.warining {
+  color: rgb(170, 170, 170);
+  text-align: center;
+  max-width: 700px;
+  margin: auto;
+  padding: 0 10px 0 10px;
+  font-size: 9pt;
+}
+
+@media screen and (min-device-width: 600px) {
+  .bars {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .banner {
+    height: 70vh;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .presentation {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+}
+
+.progress {
+  background-color: #252525;
+  margin: 10px 20px 10px 20px;
+}
+
+.progress .bar {
+  background-color: #FFF;
+  padding: 2px 12px 2px 12px;
+  font-size: 9pt;
+}
+
+.bars {
+  max-width: 800px;
+  margin: auto;
+}
+.tools {
+  color: #84DCC6;
+  font-size: 8pt;
+  text-align: center;
+}
