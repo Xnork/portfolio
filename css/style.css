@@ -18,6 +18,8 @@ html {
   background-color: #000;
 }
 
+/* ------------------- Action Bar */
+
 .action-bar {
   background-color: #0E1116;
   color: white;
@@ -28,11 +30,19 @@ html {
   align-items: center;
 }
 
-.action-bar .bi-list {
+.action-bar label .bi-list {
   font-size: 18pt;
 }
+.action-bar label {
+  z-index: 3;
+}
 
-/* ------------- Header */
+/* Meun */
+#toggle-menu:checked ~ .side-menu {
+  right: 0;
+}
+
+/* ------------- Presentation */
 .presentation {
   padding: 18px;
   width: 100%;
@@ -59,15 +69,6 @@ html {
   color: rgb(170, 170, 170);
   font-weight: 380;
 
-}
-
-.draft-2 {
-  color: #E23428;
-
-}
-
-.draft {
-  color: #30BCED;
 }
 
 /* ------------- Card Project */
@@ -117,6 +118,7 @@ html {
   background-size: cover;
 }
 
+/* ------------- Banner */
 .banner h1 {
   background-color: rgba(0, 0, 0, 0.6);
   text-align: center;
@@ -126,6 +128,16 @@ html {
   font-weight: 380;
 }
 
+.banner {
+  display: flex;
+  align-items: flex-end;
+  background-image: url(https://github.com/Xnork/xnork-blog-site/blob/main/public/assets/slides/slide-1.png?raw=true);
+  height: 50vh;
+  background-position: center;
+  background-size: cover;
+}
+
+/* ------------- Title Separations */
 .title-sep:nth-child(1) {
   margin-top: 45px;
 }
@@ -140,15 +152,7 @@ html {
   font-weight: 380;
 }
 
-.banner {
-  display: flex;
-  align-items: flex-end;
-  background-image: url(https://github.com/Xnork/xnork-blog-site/blob/main/public/assets/slides/slide-1.png?raw=true);
-  height: 50vh;
-  background-position: center;
-  background-size: cover;
-}
-
+/* ------------- Main Footer */
 .main-footer {
   background-color: rgb(12, 12, 12);
   color: white;
@@ -156,7 +160,8 @@ html {
   padding: 24px 12px 24px 12px;
 }
 
-.warining {
+/* ------------- Drafts */
+.warining-draft {
   color: rgb(170, 170, 170);
   text-align: center;
   max-width: 700px;
@@ -164,7 +169,13 @@ html {
   padding: 0 10px 0 10px;
   font-size: 9pt;
 }
+.footer-tools-draft {
+  color: #CAFE48;
+  font-size: 8pt;
+  text-align: center;
+}
 
+/* ------------- PC Adjust Responsive */
 @media screen and (min-device-width: 600px) {
   .bars {
     display: grid;
@@ -173,12 +184,10 @@ html {
   .banner {
     height: 70vh;
   }
-
   .cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
-
   .presentation {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -186,6 +195,7 @@ html {
   }
 }
 
+/* ------------- Preogress Bar */
 .progress {
   background-color: #252525;
   margin: 10px 20px 10px 20px;
@@ -201,8 +211,44 @@ html {
   max-width: 800px;
   margin: auto;
 }
-.tools {
-  color: #84DCC6;
-  font-size: 8pt;
+
+/* ------------- Side Menu */
+.side-menu .options .option a:hover {
+  background-color: #242b38;
+}
+.side-menu .options .option a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 15px 20px 15px 20px;
+  width: 70vw;
+  background-color: #0E1116;
+  margin-bottom: 5px;
+}
+.side-menu .options .option a .bi {
+  padding-right: 5px;
+}
+.side-menu .options .option {
+  color: grey;
+  list-style: none;
+}
+.side-menu .menu-footer {
+  position: relative;
   text-align: center;
+  font-size: 8pt;
+  text-decoration: underline;
+  color: white;
+}
+.side-menu {
+  position: fixed;
+  background-color: #000;
+  height: 100vh;
+  padding-bottom: 80px;
+  top: 0;
+  transition-duration: 1s;
+  right: -70vw;
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
