@@ -123,6 +123,7 @@ html {
   color: white;
   width: 100%;
   padding: 25px 0 25px 0;
+  font-weight: 380;
 }
 
 .title-sep:nth-child(1) {
