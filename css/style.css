@@ -54,7 +54,7 @@ html {
 .presentation article h1 {
   font-weight: 450;
   font-size: 18pt;
-  color: #98D2EB;
+  color: #F1FFE7;
   font-weight: 380;
   padding-bottom: 14px;
 }
@@ -163,12 +163,13 @@ html {
 
 /* ------------- Drafts */
 .warining-draft {
-  color: rgb(170, 170, 170);
+  color: rgb(99, 99, 99);
   text-align: center;
   max-width: 700px;
   margin: auto;
   padding: 0 10px 0 10px;
   font-size: 9pt;
+  padding-bottom: 24px;
 }
 .footer-tools-draft {
   color: #CAFE48;
