@@ -54,9 +54,9 @@ const load_menu_option = () => {
   let options = [
     {bi: 'bi-house', url: '/portfolio', text: 'Home'},
     {bi: 'bi-credit-card', url: '/portfolio/hire', text: 'Contratar'},
-    {bi: 'bi-chat-dots', url: '/portfolio//contact', text: 'Contato'},
-    {bi: 'bi-book', url: '/portfolio//school', text: 'Escolaridade'},
-    {bi: 'bi-person-vcard', url: '/portfolio//certificate', text: 'Certificados'},
+    {bi: 'bi-chat-dots', url: '/portfolio/contact', text: 'Contato'},
+    {bi: 'bi-book', url: '/portfolio/school', text: 'Escolaridade'},
+    {bi: 'bi-person-vcard', url: '/portfolio/certificate', text: 'Certificados'},
     {bi: 'bi-github', url: 'https://github.com/Xnork', text: 'Github'},
   ]
 
@@ -84,4 +84,8 @@ const load_hire_cards = () => {
       c.append_on('.hire-cards')
     })
   }
+}
+
+const load_details = () => {
+  $('.version').text('Portfólio 0.5v')
 }

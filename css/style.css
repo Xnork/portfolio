@@ -125,13 +125,13 @@ html {
   color: white;
   width: 100%;
   padding: 15px 0 15px 0;
-  font-weight: 300;
+  font-weight: 290;
 }
 
 .banner {
   display: flex;
   align-items: flex-end;
-  background-image: url(https://github.com/Xnork/xnork-blog-site/blob/main/public/assets/slides/slide-1.png?raw=true);
+  background-image: url(../assets/james-webb.webp);
   height: 50vh;
   background-position: center;
   background-size: cover;
@@ -193,6 +193,9 @@ html {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
+  }
+  .side-menu {
+    width: 30vw;
   }
 }
 
