@@ -41,11 +41,10 @@
 
 /* ------------- PC Adjust Responsive */
 @media screen and (min-device-width: 600px) {
-  .hire-cards .hire p {
-    height: 60%;
-  }
   .hire-cards .hire {
     height: 70vh;
+    display: grid;
+    grid-template-rows: 0fr 10fr 1fr 1fr;
   }
   .hire-cards {
     display: grid;
