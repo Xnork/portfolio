@@ -52,11 +52,11 @@ const load_skills_bar = () => {
 }
 const load_menu_option = () => {
   let options = [
-    {bi: 'bi-house', url: '/', text: 'Home'},
-    {bi: 'bi-credit-card', url: '/hire', text: 'Contratar'},
-    {bi: 'bi-chat-dots', url: '/contact', text: 'Contato'},
-    {bi: 'bi-book', url: '/school', text: 'Escolaridade'},
-    {bi: 'bi-person-vcard', url: '/certificate', text: 'Certificados'},
+    {bi: 'bi-house', url: '/portfolio', text: 'Home'},
+    {bi: 'bi-credit-card', url: '/portfolio/hire', text: 'Contratar'},
+    {bi: 'bi-chat-dots', url: '/portfolio//contact', text: 'Contato'},
+    {bi: 'bi-book', url: '/portfolio//school', text: 'Escolaridade'},
+    {bi: 'bi-person-vcard', url: '/portfolio//certificate', text: 'Certificados'},
     {bi: 'bi-github', url: 'https://github.com/Xnork', text: 'Github'},
   ]
 
