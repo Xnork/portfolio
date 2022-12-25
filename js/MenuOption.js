@@ -11,6 +11,7 @@ class MenuOption {
         <a href="${this.url}">
           <i class="bi ${this.bi}"></i>
           <span>${this.text}</span>
+          <i class="bi bi-chevron-right"></i>
         </a>
       </li>
     `)

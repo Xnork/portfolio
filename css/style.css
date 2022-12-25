@@ -1,5 +1,7 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css");
-
+:root {
+  background-color: #000;
+}
 * {
   padding: 0;
   margin: 0;
@@ -14,12 +16,7 @@
   font-family: Montserrat, Montserrat, sans-serif;
 }
 
-html {
-  background-color: #000;
-}
-
 /* ------------------- Action Bar */
-
 .action-bar {
   background-color: #0E1116;
   color: white;
@@ -29,8 +26,7 @@ html {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
   align-items: center;
 }
-
-.action-bar label .bi-list {
+.action-bar label .bi {
   font-size: 18pt;
 }
 .action-bar label {
@@ -47,7 +43,6 @@ html {
   padding: 18px;
   width: 100%;
 }
-
 .presentation article h1 .bi {
   padding-right: 12px;
 }
@@ -58,7 +53,6 @@ html {
   font-weight: 380;
   padding-bottom: 14px;
 }
-
 .presentation article {
   background-color: #0E1116;
   border-radius: 5px;
@@ -78,27 +72,22 @@ html {
   padding: 15px;
   border-radius: 5px;
 }
-
-
 .card-project .card-content .card-title {
   font-size: 14pt;
   font-weight: 380;
   text-align: center;
 }
-
 .card-project .card-content .card-text {
   font-size: 10pt;
   color: rgb(170, 170, 170);
   font-weight: 380;
   padding-top: 8px;
 }
-
 .card-project .card-content {
   padding: 10px;
   color: white;
   height: 130px;
 }
-
 .card-project .card-action .card-link {
   background-color: #E1F2FE;
   color: black;
@@ -110,7 +99,6 @@ html {
   width: 100%;
   text-align: center;
 }
-
 .card-project .card-image {
   width: 100%;
   height: 200px;
@@ -127,7 +115,6 @@ html {
   padding: 15px 0 15px 0;
   font-weight: 290;
 }
-
 .banner {
   display: flex;
   align-items: flex-end;
@@ -141,7 +128,6 @@ html {
 .title-sep:nth-child(1) {
   margin-top: 45px;
 }
-
 .title-sep {
   color: white;
   text-align: center;
@@ -211,7 +197,6 @@ html {
   padding: 2px 12px 2px 12px;
   font-size: 9pt;
 }
-
 .bars {
   max-width: 800px;
   margin: auto;
@@ -224,11 +209,13 @@ html {
 .side-menu .options .option a {
   color: white;
   text-decoration: none;
-  display: block;
+  display: grid;
+  grid-template-columns: 1fr 10fr 1fr;
   padding: 15px 20px 15px 20px;
-  width: 70vw;
+  width: 420px;
   background-color: #0E1116;
   margin-bottom: 5px;
+  font-weight: 380;
 }
 .side-menu .options .option a .bi {
   padding-right: 5px;
@@ -251,7 +238,7 @@ html {
   padding-bottom: 80px;
   top: 0;
   transition-duration: 1s;
-  right: -80vw;
+  right: -500px;
   padding-top: 80px;
   display: flex;
   flex-direction: column;
