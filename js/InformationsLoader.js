@@ -1,5 +1,5 @@
 const load_projects_card = () => {
-  projects = [
+  let projects = [
     {url: '#', background: 'https://github.com/Xnork/BlogExemple-v2/blob/main/screenshots/1.png?raw=true',
     title: 'Blog Project - v1', text: 'Este blog é simples, mas alguns conceitos nele presente favorece a responsividade do site para ambos os dispositívos.'},
     {url: '#', background: 'https://github.com/Xnork/xnork-blog-site/blob/main/screenshots/2022-08-21-113855_1360x768_scrot.png?raw=true',
@@ -18,14 +18,16 @@ const load_projects_card = () => {
     title: 'To-Do List', text: 'Um sistema de tarefas com banco de dados, ele armazena as informações em uma banco de dados e tem uma interface simples.', tools: 'C++, ncurses'}
   ]
   
-  projects.map((project) => {
-    let card = new CardProject(project.background, project.url, project.title, project.text, project.tools)
-    card.append_on('.cards')
-  })
+  if($('.cards').length) {
+    projects.map((project) => {
+      let card = new CardProject(project.background, project.url, project.title, project.text, project.tools)
+      card.append_on('.cards')
+    })
+  }
 }
 
 const load_skills_bar = () => {
-  skills = [
+  let skills = [
     {percent: '98', text: '- C++'},
     {percent: '94', text: '- C'},
     {percent: '76', text: '- Python3'},
@@ -41,23 +43,45 @@ const load_skills_bar = () => {
     {percent: '50', text: '- TypeScript'},
     {percent: '62', text: '- Java'}
   ]
-
-  skills.map((skill) => {
-    let bar = new SkillBar(skill.percent, skill.text)
-    bar.append_on('.bars')
-  })
+  if($('.bars').length) {
+    skills.map((skill) => {
+      let bar = new SkillBar(skill.percent, skill.text)
+      bar.append_on('.bars')
+    })
+  }
 }
 const load_menu_option = () => {
-  options = [
-    {bi: 'bi-chat-dots', url: '#', text: 'Contato'},
-    {bi: 'bi-person-vcard', url: '#', text: 'Certificados'},
-    {bi: 'bi-book', url: '#', text: 'Escolaridade'},
-    {bi: 'bi-github', url: '#', text: 'Github'},
-    {bi: 'bi-credit-card', url: '#', text: 'Contratar'},
+  let options = [
+    {bi: 'bi-house', url: '/', text: 'Home'},
+    {bi: 'bi-credit-card', url: '/hire', text: 'Contratar'},
+    {bi: 'bi-chat-dots', url: '/contact', text: 'Contato'},
+    {bi: 'bi-book', url: '/school', text: 'Escolaridade'},
+    {bi: 'bi-person-vcard', url: '/certificate', text: 'Certificados'},
+    {bi: 'bi-github', url: 'https://github.com/Xnork', text: 'Github'},
   ]
 
-  options.map((menu_option) => {
-    let option = new MenuOption(menu_option.bi, menu_option.url, menu_option.text)
-    option.append_on('.side-menu .options')
-  })
+  if($('.side-menu .options').length) {
+    options.map((menu_option) => {
+      let option = new MenuOption(menu_option.bi, menu_option.url, menu_option.text)
+      option.append_on('.side-menu .options')
+    })
+  }
+}
+
+const load_hire_cards = () => {
+  let cards = [
+    {title: 'Básico', last_price: 600, price: 39, 
+    text: 'Um site simples que seu propósito é apenas divulgar algo, com propósitos simples, onde não deve ter solicitações de uso de banco de dados ou mais de 4 páginas.'},
+    {title: 'Pro', last_price: 000, price: 00, 
+    text: 'Este pacote está sendo desenvolvido...'},
+    {title: 'Avançado', last_price: 000, price: 00, 
+    text: 'Este pacote está sendo desenvolvido...'},
+  ]
+
+  if($('.hire-cards').length) {
+    cards.map((card) => {
+      let c = new HireCard(card.last_price, card.price, card.title, card.text);
+      c.append_on('.hire-cards')
+    })
+  }
 }

@@ -124,8 +124,8 @@ html {
   text-align: center;
   color: white;
   width: 100%;
-  padding: 25px 0 25px 0;
-  font-weight: 380;
+  padding: 15px 0 15px 0;
+  font-weight: 300;
 }
 
 .banner {
@@ -247,9 +247,10 @@ html {
   padding-bottom: 80px;
   top: 0;
   transition-duration: 1s;
-  right: -70vw;
+  right: -80vw;
   padding-top: 80px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
 }

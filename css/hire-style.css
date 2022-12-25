@@ -1,0 +1,54 @@
+.hire-cards .hire h1 {
+  font-weight: 380;
+  padding: 14px;
+  text-align: center;
+}
+.hire-cards .hire p {
+  font-weight: 380;
+  padding: 14px;
+  color: rgb(170, 170, 170);
+}
+.hire-cards .hire .hire-buy {
+  color: #000;
+  text-decoration: none;
+  background-color: #F1FFE7;
+  padding: 12px;
+  display: block;
+  text-align: center;
+  border-radius: 5px;
+  margin: 14px;
+}
+.hire-cards .hire .last-hire-price {
+  font-size: 12pt;
+  color: #ff3434;
+  text-decoration: line-through;
+}
+.hire-cards .hire .hire-price, .last-hire-price {
+  font-weight: 380;
+  color: #BAFF29;
+  font-size: 24pt;
+}
+.hire-cards .hire {
+  color: white;
+  border-radius: 5px;
+  background-color: #0E1116;
+  margin: 20px;
+  padding: 14px
+}
+.price-area {
+  text-align: center;
+}
+
+/* ------------- PC Adjust Responsive */
+@media screen and (min-device-width: 600px) {
+  .hire-cards .hire p {
+    height: 60%;
+  }
+  .hire-cards .hire {
+    height: 70vh;
+  }
+  .hire-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

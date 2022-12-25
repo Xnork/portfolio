@@ -1,0 +1,12 @@
+.contact ul li a {
+  list-style: none;
+  color: white;
+  margin-left: 12px;
+}
+.contact ul {
+  margin-bottom: 90vh;
+}
+.contact ul li {
+  color: white;
+  padding: 12px;
+}
