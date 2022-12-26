@@ -52,6 +52,7 @@ const load_skills_bar = () => {
 }
 const load_menu_option = () => {
   let options = [
+    {bi: 'bi-newspaper', url: '#', text: 'Blog'},
     {bi: 'bi-house', url: '/portfolio', text: 'Home'},
     {bi: 'bi-credit-card', url: '/portfolio/hire', text: 'Contratar'},
     {bi: 'bi-chat-dots', url: '/portfolio/contact', text: 'Contato'},
@@ -77,7 +78,7 @@ const load_hire_cards = () => {
     {title: 'Avançado', last_price: 000, price: 00, 
     text: 'Este pacote está sendo desenvolvido...'},
   ]
-
+  
   if($('.hire-cards').length) {
     cards.map((card) => {
       let c = new HireCard(card.last_price, card.price, card.title, card.text);

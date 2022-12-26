@@ -190,9 +190,11 @@
 .progress {
   background-color: #252525;
   margin: 10px 20px 10px 20px;
+  border-radius: 5px;
 }
 
 .progress .bar {
+  border-radius: 5px;
   background-color: #FFF;
   padding: 2px 12px 2px 12px;
   font-size: 9pt;
@@ -210,7 +212,7 @@
   color: white;
   text-decoration: none;
   display: grid;
-  grid-template-columns: 1fr 10fr 1fr;
+  grid-template-columns: 0fr 10fr 0fr;
   padding: 15px 20px 15px 20px;
   width: 70vw;
   background-color: #0E1116;
@@ -218,7 +220,7 @@
   font-weight: 380;
 }
 .side-menu .options .option a .bi {
-  padding-right: 5px;
+  padding-right: 10px;
 }
 .side-menu .options .option {
   color: grey;
