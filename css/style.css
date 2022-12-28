@@ -58,9 +58,11 @@
   border-radius: 5px;
   padding: 24px;
   margin-top: 14px;
+  min-height: 250px;
 }
 .presentation article p {
   color: rgb(170, 170, 170);
+  transition-duration: 1s;
   font-weight: 380;
 
 }
