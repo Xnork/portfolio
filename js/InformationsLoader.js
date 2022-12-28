@@ -58,7 +58,6 @@ const load_menu_option = () => {
     {bi: 'bi-chat-dots', url: '/portfolio/contact', text: 'Contato'},
     {bi: 'bi-book', url: '/portfolio/school', text: 'Escolaridade'},
     {bi: 'bi-person-vcard', url: '/portfolio/certificate', text: 'Certificados'},
-    {bi: 'bi-github', url: 'https://github.com/Xnork', text: 'Github'},
   ]
 
   if($('.side-menu .options').length) {
