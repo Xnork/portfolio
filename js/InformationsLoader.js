@@ -53,7 +53,7 @@ const load_skills_bar = () => {
 const load_menu_option = () => {
   let options = [
     {bi: 'bi-house', url: '/portfolio', text: 'Home'},
-    {bi: 'bi-newspaper', url: '#', text: 'Blog (coming soon)'},
+    {bi: 'bi-newspaper', url: '#', text: 'Blog (em breve)'},
     {bi: 'bi-credit-card', url: '/portfolio/hire', text: 'Contratar'},
     {bi: 'bi-chat-dots', url: '/portfolio/contact', text: 'Contato'},
     {bi: 'bi-person-vcard', url: '/portfolio/certificate', text: 'Certificados'},
