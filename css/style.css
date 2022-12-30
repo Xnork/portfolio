@@ -265,3 +265,20 @@
     width: 30vw;
   }
 }
+
+.contacts ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+.contacts ul li {
+  list-style: none;
+  border-bottom: 1px solid white;
+  padding-bottom: 4px;
+}
+.contacts ul {
+  display: flex;
+  margin-top:24px;
+  justify-content: center;
+  column-gap: 24px;
+}
