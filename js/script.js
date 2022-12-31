@@ -5,8 +5,8 @@ load_hire_cards();
 load_details();
 
 banners_image = [
-  '/portfolio/assets/james-webb.webp',
-  '/portfolio/assets/nebula.jpg'
+  'assets/james-webb.webp',
+  'assets/nebula.jpg'
 ];
 
 
