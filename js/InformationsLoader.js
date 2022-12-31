@@ -35,7 +35,7 @@ const load_skills_bar = () => {
     {percent: '79', text: '- JavaScript'},
     {percent: '83', text: '- SDL2'},
     {percent: '47', text: '- ReactJS'},
-    {percent: '87', text: '- CSS'},
+    {percent: '89', text: '- CSS'},
     {percent: '88', text: '- HTML'},
     {percent: '34', text: '- Rust'},
     {percent: '40', text: '- Assembly'},
