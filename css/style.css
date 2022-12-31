@@ -274,7 +274,7 @@
 .contacts ul li {
   list-style: none;
   border-bottom: 1px solid white;
-  padding-bottom: 4px;
+  padding-bottom: 5px;
 }
 .contacts ul {
   display: flex;
