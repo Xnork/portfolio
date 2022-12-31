@@ -8,13 +8,12 @@ banners_image = [
   '../assets/james-webb.webp',
   '../assets/nebula.jpg'
 ];
-$('.banner').ready(()=> {
-  let index = 0;
+
+let index = 0;
+$('.banner').css('background-image', `url(${banners_image[index++]})`)
+setInterval(() => {
+  if(index > 1) {
+    index = 0;
+  }
   $('.banner').css('background-image', `url(${banners_image[index++]})`)
-  setInterval(() => {
-    if(index > 1) {
-      index = 0;
-    }
-    $('.banner').css('background-image', `url(${banners_image[index++]})`)
-  }, 5000)
-})
+}, 5000)
