@@ -133,7 +133,6 @@
 .banner {
   display: flex;
   align-items: flex-end;
-  background-image: url(../assets/james-webb.webp);
   height: 50vh;
   background-position: center;
   background-size: cover;
