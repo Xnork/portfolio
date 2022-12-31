@@ -238,6 +238,16 @@
   box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
 }
 
+/* ------------- Moblie Adjust Responsive */
+@media screen and (max-device-width: 600px) {
+  .presentation article p{
+    padding: 0 5px 0 5px;
+  }
+  .presentation article {
+    padding: 6px;
+  }
+}
+
 /* ------------- PC Adjust Responsive */
 @media screen and (min-device-width: 600px) {
   .bars {
