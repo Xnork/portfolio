@@ -9,6 +9,8 @@ banners_image = [
   '../assets/nebula.jpg'
 ];
 
+
+// banner
 let index = 0;
 $('.banner').css('background-image', `url(${banners_image[index++]})`)
 setInterval(() => {
