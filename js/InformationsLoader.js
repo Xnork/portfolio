@@ -86,5 +86,5 @@ const load_hire_cards = () => {
 }
 
 const load_details = () => {
-  $('.version').text('Portfólio 0.7.0v')
+  $('.version').text('Portfólio 0.7.1v')
 }
