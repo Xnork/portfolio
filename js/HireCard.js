@@ -14,7 +14,7 @@ class HireCard {
           <span class="last-hire-price">R$ ${this.last_price}</span>
           <span class="hire-price">12x R$ ${this.price}</span>
         </div>
-        <a href="#" class="hire-buy">Comprar</a>
+        <a href="#" class="hire-buy" onclick="alert('Solicite ao entrar em contato comigo por alguma rede social')">Comprar</a>
       </div>
     `)
   }
