@@ -1,5 +1,7 @@
 const load_projects_card = () => {
   let projects = [
+    {url: 'https://github.com/Xnork/NoobBank-Mobile-Layout', background: 'https://github.com/Xnork/NoobBank-Mobile-Layout/blob/main/screenshots/1.png?raw=true',
+    title: 'NoobBank Mobile', text: 'Um site que simula a interfaçe de um app bancário, que "utiliza" blockchain, inspirado no layout da nubank. É ideias fantasiosas, mas o código ficou relativamente bem estruturado.', tools: 'HTML, CSS'},
     {url: 'https://github.com/Xnork/xnork-blog-site', background: 'https://github.com/Xnork/BlogExemple-v2/blob/main/screenshots/1.png?raw=true',
     title: 'Blog v1', text: 'Este blog é simples, mas alguns conceitos nele presente favorece a responsividade do site para ambos os dispositívos.'},
     {url: 'https://github.com/Xnork/BlogExemple-v2', background: 'https://github.com/Xnork/xnork-blog-site/blob/main/screenshots/2022-08-21-113855_1360x768_scrot.png?raw=true',
